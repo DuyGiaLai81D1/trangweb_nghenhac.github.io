@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <style>
-    *{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,9 +29,9 @@ body{
       margin-right: -5px;
 }
 #layout{
-    margin: 0px auto;
-    width: 100%;
+    
     width:1520px;
+    margin: 0px auto;
     display: block;
     position: relative;
    
@@ -1295,19 +1295,20 @@ margin-left: 7px;
     flex: 2.2; z-index: 2; margin-right: -5px;
 }
   }
-  @media only screen and (max-width: 667px) {
+  @media only screen and (max-width: 677px) {
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
-    body {
+    html,body {
         margin: 0;
         padding: 0;
+        width: 100%;
         overflow-x: hidden;
     }
     #layout{
-        width:100%;
+        max-width:100%;
         display: block;
         position: relative;
     }
@@ -1726,7 +1727,159 @@ margin-left: 7px;
         left: 50px;
         top: 262px;
     }
-    
+    .chu-danh-sach {
+        text-align: center;
+        font-size: 24px;
+        font-family: Myriad Pro, Regular;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+    }
+    .can-hinh-thanh {
+        display: flex;
+        margin-left: 627px;
+        margin-top: 10px;
+    }
+    .chu-cau-thu-1 {
+        font-family: Myriad Pro, Regular;
+        color: white;
+        transform: skew(27deg);
+        margin-top: 14px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .chu-huan-luyen-vien {
+        font-family: Myriad Pro, Regular;
+        color: #013747;
+        transform: skew(27deg);
+        margin-top: 14px;
+        margin-left: 25px;
+        font-size: 16px;
+    }
+    .chu-doi-bong {
+        font-family: Myriad Pro, Regular;
+        color: #013747;
+        transform: skew(27deg);
+        margin-top: 14px;
+        margin-left: 16px;
+        font-size: 16px;
+    }
+    #cau-thu {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .can-thong-tin {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 34px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .than-bg {
+        height: 6000px;
+        background-color: #eefdff;
+        width: 100%;
+        margin-top: -141px;
+        z-index: 2;
+    }
+    #cau-thu {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    #logo-khachHang {
+        width: 98%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: auto;
+        margin-top: 30px;
+        gap: 5px;
+    }
+    .logo-khachHang-1 {
+        width: 150px;
+        height: 40px;
+        background-color: #ffffff;
+        position: relative;
+        box-shadow: 0px 0px 8px 2px #cecaca;
+    }
+    .duyem-logo-1 {
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+    .duyem-logo{
+        width: 90%;
+    }
+    .duyem-logo-2 {
+        margin-top: 14px;
+        margin-left: 3px;
+    }
+    .duyem-logo-3 {
+        margin-top: 13px;
+        margin-left: 3px;
+    }
+    .duyem-logo-4 {
+        margin-top: 11px;
+        margin-left: 4px;
+    }
+    .duyem-logo-5 {
+        margin-top: 6px;
+        margin-left: 4px;
+    }
+    .duyem-logo-6 {
+        margin-top: 11px;
+        margin-left: 3px;
+    }
+    .duyem-logo-01 {
+        margin-top: 15px;
+    }
+    .duyem-logo-02 {
+        margin-top: 15px;
+    }
+    .img-footter-2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    .img-footter-1 {
+        width: 100%;
+        margin-top: 7px;
+    }
+    .img-footter-3 {
+        position: absolute;
+        left: 209px;
+        top: 25px;
+        width: 16%;
+    }
+    .thanh-gradiend {
+        position: absolute;
+        top: 66px;
+        left: 96px;
+        background: linear-gradient(to right, #01333b,#192d2c,#51361d, #f05e03,#ff6201,#f05e03, #51361d,#192d2c,#01333b );
+        width: 320px;
+        height: 1px;
+        border-radius: 50%;
+    }
+    .chu-footter {
+        color: white;
+        position: absolute;
+        top: 77px;
+        word-spacing: 2px;
+        left: 168px;
+        font-size: 6px;
+    }
+}
+
 
 }
 
@@ -1744,7 +1897,7 @@ margin-left: 7px;
             <div id="duyem">
                 <div id="nav">
                     <div id="nav-1">
-                        <img id="img" src="img/index.psd.png" alt="" width="100%">
+                        <img id="img" src="index.psd.png" alt="" width="100%">
                     </div>
                    <div id="nav-2" tabindex="0">
                     <ul class="ul-ipath">
@@ -1775,26 +1928,26 @@ margin-left: 7px;
             </div>
         </nav>
 
-        <img class="img-ipath-2" src="img/Layer111.png" alt="" >
-        <img class="img-ipath-3" src="img/BACKGROUND-5.png" alt="" >
-        <img  class="img-ipath-4" src="img/hinhBongDa.png" alt="">
-        <img class="img-ipath-5" src="img/Rectangle 70.png" alt="">
+        <img class="img-ipath-2" src="Layer111.png" alt="" >
+        <img class="img-ipath-3" src="BACKGROUND-5.png" alt="" >
+        <img  class="img-ipath-4" src="hinhBongDa.png" alt="">
+        <img class="img-ipath-5" src="Rectangle 70.png" alt="">
 
         <div id="Logo-congTy"> 
            
             <p id="banToChuc">Ban tổ chức:</p>
             <div class="logo1">
-                <img class="img-logo1" src="img/LOGO-BYTESOFT.png" alt="" >
+                <img class="img-logo1" src="LOGO-BYTESOFT.png" alt="" >
             </div>
             <div class="logo">
-                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="" >
+                <img class="logo-logo" src="LOGO-BYTESOFT.png" alt="" >
             </div>
           
             <div class="logo">
-                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="" >
+                <img class="logo-logo" src="LOGO-BYTESOFT.png" alt="" >
             </div>
             <div class="logo">
-                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="">
+                <img class="logo-logo" src="LOGO-BYTESOFT.png" alt="">
             </div>
         </div>
 
@@ -1817,14 +1970,14 @@ margin-left: 7px;
                     <button class="btn-xemtiep">Xem tiếp</button>
                 </div>
             </div>
-            <img class="img-ipath-gioi-thieu-1" src="img/Untitled-55.png" alt="">
-            <img class="img-ipath-gioi-thieu-01" src="img/Untitled-19.png" alt="">
-            <img class="img-ipath-gioi-thieu-02" src="img/Untitled-20.png" alt="">
+            <img class="img-ipath-gioi-thieu-1" src="Untitled-55.png" alt="">
+            <img class="img-ipath-gioi-thieu-01" src="Untitled-19.png" alt="">
+            <img class="img-ipath-gioi-thieu-02" src="Untitled-20.png" alt="">
         </div>
         <div style="position: relative;"></div>
         <div id="can-kich-thuoc-khoi-gioi-thieu" >
-            <img class="img-ipath-gioi-thieu-2" src="img/Untitled-7.png" alt="" width="100%" >
-            <img class="img-ipath-gioi-thieu-3" src="img/Untitled-8.png" alt="" width="100%">
+            <img class="img-ipath-gioi-thieu-2" src="Untitled-7.png" alt="" width="100%" >
+            <img class="img-ipath-gioi-thieu-3" src="Untitled-8.png" alt="" width="100%">
             <div class="can-chu-hoat-dong" >
                 <h1 class="chu1">HOẠT ĐỘNG GẦN ĐÂY</h1>
                 <div class="can-chinh-hoat-dong-1">
@@ -1911,16 +2064,16 @@ margin-left: 7px;
         </div>
         <div id="bocKhoi">
             <div id="khoi-1">
-                <img src="img/Untitled-10.png" alt="">
+                <img src="Untitled-10.png" alt="">
             </div>
             <div id="khoi-2">
-                <img src="img/Untitled-9.png" alt="">
+                <img src="Untitled-9.png" alt="">
             </div>
         </div>
         <div id="khoi-3">
-            <img class="img-khoi-3-1" src="img/Untitled-11.png" alt="" >
-            <img class="img-khoi-3-2" src="img/Untitled-13.png" alt="" >
-            <img class="img-khoi-3-3" src="img/Layer 3.png" alt="" >
+            <img class="img-khoi-3-1" src="Untitled-11.png" alt="" >
+            <img class="img-khoi-3-2" src="Untitled-13.png" alt="" >
+            <img class="img-khoi-3-3" src="Layer 3.png" alt="" >
             <h1 class="chu-san-giao-dich">SẢN GIAO DỊCH</h1>
             <h1 class="chu-bat-dong-san">BẤT ĐỘNG SẢN</h1>
         </div>
@@ -1949,7 +2102,7 @@ margin-left: 7px;
 
             <div id="cau-thu">
                 <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
                     <h4 style="
                     position: absolute;
     left: 59px;
@@ -1965,11 +2118,186 @@ margin-left: 7px;
     height: 3px;
     z-index: 3; background-color: white;">
                     <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
                         margin-left: 85px;
                         width: 47%;
                     ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
                     <div style="margin-top: 70px; text-align: center;">
                     <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
                     <h4>Tổng Điểm : 5421</h4>
@@ -1984,7 +2312,7 @@ margin-left: 7px;
                 </div>
 
                 <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
                     <h4 style="
                     position: absolute;
     left: 59px;
@@ -2000,44 +2328,11 @@ margin-left: 7px;
     height: 3px;
     z-index: 3; background-color: white;">
                     <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
                         margin-left: 85px;
                         width: 47%;
                     ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
                     <div style="margin-top: 70px; text-align: center;">
                     <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
                     <h4>Tổng Điểm : 5421</h4>
@@ -2049,209 +2344,10 @@ margin-left: 7px;
                     </div>
                     </div>
                     
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                   
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                    
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
-                    <h4 style="
-                    position: absolute;
-    left: 59px;
-    top: 27px;
-    z-index: 3;
-    color: white;
-    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
-    <hr style="  
-        position: absolute;
-    left: 107px;
-    top: 59px;
-    width: 73px;
-    height: 3px;
-    z-index: 3; background-color: white;">
-                    <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
-                        margin-left: 85px;
-                        width: 47%;
-                    ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
-                    <div style="margin-top: 70px; text-align: center;">
-                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
-                    <h4>Tổng Điểm : 5421</h4>
-                    <div class="arrow-up ">
-                    </div>
-                    <div class="arrow-down">
-                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
-                    </div>
-                    </div>
-                    </div>
                 </div>
 
-                <div class="cau-thu-1">
-                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                 <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
                     <h4 style="
                     position: absolute;
     left: 59px;
@@ -2267,11 +2363,11 @@ margin-left: 7px;
     height: 3px;
     z-index: 3; background-color: white;">
                     <div class="cau-thu-1-1">
-                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
                         margin-left: 85px;
                         width: 47%;
                     ">
-                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
                     <div style="margin-top: 70px; text-align: center;">
                     <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
                     <h4>Tổng Điểm : 5421</h4>
@@ -2284,6 +2380,78 @@ margin-left: 7px;
                     </div>
                     
                 </div>
+
+               <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="cau-thu-1">
+                    <img src="Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
                 <div class="cau-thu-1">
                     <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
                     <h4 style="
