@@ -1,315 +1,2399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
-    <link rel="stylesheet" href="trangChu.css">
-    <link rel="icon" href="img/OIP.jpg" type="image/x-icon" style="border-radius: 20px;">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="De.css">
+    <title>Document</title>
 </head>
 <style>
-    /* Global styles */
-body {
+    *{
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: black;
-    color: #ddd;
-}
-
-header {
-    background-color: rgba(32, 32, 32, 0.5);    
-    color: white;
-    padding: 10px;
-    height: 70px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-
-}
-.phandau{
-    display: flex;
-    font-size: 50px;
-    justify-content: space-between;
-}
-.phandau1{
-    margin-right: 20px;
-}
-header h1 {
-    margin: 0;
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #000000;
-    padding: 10px;
-    height: 20px;
-    border-radius: 50px;
-    display: flex;
-}
-
-nav ul {
-    list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
+    box-sizing: border-box;
 }
-
-nav ul li {
+body{
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+    }
+#nav-1{
+    flex: 0.2;
+     z-index: 2;
+      margin-right: -5px;
+}
+#layout{
+    margin: 0px auto;
+    width: 100%;
+    width:1520px;
+    display: block;
     position: relative;
-    margin-right: 20px;
+   
 }
-
-nav ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: #ddd;
-}
-nav ul li a:hover {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: #c20101;
-}
-
-nav ul li .dropdown-content {
-    display: none;
+header{
+    height: 49px;
+    width: 100%;
+    background-color: #021b2d;
+    display: flex;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    white-space: nowrap;
-    z-index: 1000;
+    z-index: 2;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    z-index: 3;
+}
+#duyem{
+    background-color: rgba(255, 255, 255, 0.5); 
+    width: 100%;
+     height: 100px; 
+     top: 49px;
+      position: absolute;
+    
+}
+.menu-item {
+    position: relative;
 }
 
-nav ul li:hover .dropdown-content {
-    display: block;
-
-}
-
-nav ul li .dropdown-content a {
-    display: block;
-    padding: 5px 10px;
-    color: black;
+.menu a {
     text-decoration: none;
-}
-
-nav ul li .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
-}
-
-article {
-    flex: 3;
-    padding: 20px;
-    /* background-color: #202020; */
-    background-color: rgba(32, 32, 32, 0.5);
-    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(33, 32, 32, 1), rgba(41, 40, 40, 0.8)); */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
-    color: aliceblue;
-}
-
-aside {
-    flex: 1;
-    padding: 20px;
-    /* background-color: #202020; */
-    background-color: rgba(32, 32, 32, 0.5);
-    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(33, 32, 32, 1), rgba(41, 40, 40, 0.8)); */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
-
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.product {
-    flex: 1 1 320px;
-    max-width: 408px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 10px;
-    height: 300px;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.info {
-    padding: 5px; 
-    margin: 0; 
-}
-
-.title {
-    font-size: 16px;
+    color: black;
     font-weight: bold;
-    margin: 0 0 5px 0; 
+    padding: 10px 15px;
+    display: inline-block;
 }
-
-.channel {
-    color: #888;
-    font-size: 14px;
-    margin: 0 0 5px 0;
+.arrow {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #F95411;
+    display: none;
+    z-index: 5;
 }
-
-.views-date {
-    font-size: 12px;
-    color: #aaa;
+.arrow1{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #F95411;
+    display: none;
+    z-index: 5;
+}
+ul li a{
+    font-size: 3px  ;
+}
+.submenu {
+    position: absolute;
+    top: 97px;
+    left: 10px;
+    width: 265px;
+    height: 140px;
+    list-style: none;
+    padding: 5px;
     margin: 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+    border-bottom:3px solid #F95411;
+    border-top: 20px solid rgba(255, 255, 255, 0.1) ;
 }
-footer {
-    background-color: rgba(32, 32, 32, 0.5);
-    color: white;
+
+.submenu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.submenu .dot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.menu-item:hover .submenu,
+.menu-item:hover .arrow {
+    display: block;
+}
+.menu-item:hover .submenu {
+    pointer-events: auto;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin:0px auto;
+    height: 100px;
+    /* position: absolute;
+    left: 151px;     */
+}
+ul{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 42px;
+    margin-left: 147px;
+}
+#img{
+    margin-top: 23px;  
+    width: 175px;
+    height: 54px;
+    margin-left: -1px;
+    flex: 1;
+}
+#dau1{
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 160px;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+ul li{
+    list-style-type: none;
+    display: flex;
     padding: 10px;
+    height: 96px;
+   display: flex;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   z-index: 2;
+   font-size: 19px;
+   font-family: Myriad Pro,Regular;
+   margin: auto;
+}
+#than{
+    position:absolute ;
+    z-index: 2;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    display: flex;
+
+}
+.duyem{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+.duyem1{
+  
+}
+.duyem2{
+    top: 0px;
+    left: 0px;
+}
+.duyem3{
+    top: 0px;
+    left: 0px;
+}
+.duyem4{
+    top:27.4%;
+    left: 10%;
+}
+.duyem4 img{
+    width: 100%;
+}
+.logo1{
+    width: 170px;
+    height: 74px;
+    background-color: aliceblue;
+    border: 1px solid #ffae00;
+}
+.logo{
+    width: 130px;
+    height: 74px;
+    background-color:aliceblue ;
+    border: 1px solid #ffae00;
+}
+.btn-xemtiep{
+    width: 163px;
+    height: 47px;
+    background: linear-gradient(to right, #ff6402, #fd7b0c);
+    border: none;
+    border-radius: 23px;
+    margin-top: 68px;
+    margin-left: -5px;
+    color: white;
+    box-shadow:7px 7px 8px 1px #c6c6c6;
+    color: white;
+    font-family: Myriad Pro,Regular;
+    font-style: bold;
+    font-size: 16px;
+    word-spacing: 3.5px;
+}
+.img-ipath-gioi-thieu-01{
+    position: absolute;
+    top: 1020px;
+    right: 319px;
+}
+.img-ipath-gioi-thieu-02{
+    position: absolute;
+    top: 1043px;
+    right: 343px;
+}
+.chu1{
+    font-family: Myriad Pro,Regular;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    word-spacing: 8.8px;
+    margin-bottom: 21px;
+
+}
+.table-container {
+    width: 1027px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: absolute;
+    top: 181px;
+    left: 252px;
+    border-top:1px solid #ff6402 ;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
     text-align: center;
 }
+table thead tr{
+    height:100px ;
+    width: 25%;
+}
+table thead tr td{
+    height:100px ;
+}
+thead tr {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    padding: 30px;
+}
 
-@media (max-width: 768px) {
-    .main {
+thead th {
+    padding: 12px 8px;
+    text-transform: uppercase;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffe5e5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+td{
+    height: 66.4px;
+}
+tbody td {
+    padding: 12px 8px;
+    color: #333;
+}
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+tr:hover .duyem-table {
+    border-left: 5px solid #ff6402; 
+}
+#khoi-1{
+  
+    width: 35px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #ff6402;
+    padding: 10px 12px;
+    display: flex;
+}
+#khoi-2{
+    width: 35px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ff6402;
+    padding: 10px 12px;
+    display: flex;
+}
+#bocKhoi{
+    display: flex;
+    width: 60%;
+    margin-left: 306px;
+    justify-content: center;
+    gap: 15px;
+}
+.dau-bg {
+    width: 100%;
+    height: 231px;
+    background-color: #eefdff;
+    clip-path: polygon(51% 0, 0 39%, 100% 39%);
+    margin-top: 46px;
+    box-shadow: 0px 0px 10px 20px black;
+    
+}
+.than-bg{
+    height: 1800px  ;
+    background-color: #eefdff;
+    width: 100%;
+    margin-top: -141px;
+    z-index: 2;
+}
+.duoi-bg{
+    width: 100%;
+    height: 143px;
+    background: #eefdff;
+    clip-path:  polygon(-993px -37px, 150% 0px, 50.5% 99%);
+    margin-top: -55px;
+
+}
+#cau-thu{
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 113px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cau-thu-1{
+    width: 284px;
+    height: 451px;
+    background-color: #ffffff;
+    position: relative;
+}
+.cau-thu-1-1{
+    width: 264px;
+    height: 294px;
+    background-color: #8a9dbc;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    margin-left: 123px;
+    margin-top: 14px;
+  }
+.arrow-down {
+    width: 108px;
+    height: 38px;
+    background-color: #000305;
+    margin-left: 80px;
+    display: flex;
+    
+  }
+  #logo-khachHang{
+    width: 81%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 50px;
+    gap: 22px;
+  }
+  .logo-khachHang-1{
+    width: 230px;
+    height:113px;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 8px 2px #cecaca;
+  }
+  footer{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+  }
+  .img-ipath-2{
+    width: 35%;
+    position: absolute;
+    left: 510px;
+    top: 298px;
+}
+.img-ipath-3{
+    position: absolute;
+    left: 483px;
+    top: 419px;
+    width: 38%;
+}
+.img-ipath-4{
+          position: absolute;
+   left: 674px;
+    top: 411px;
+    width: 205px;
+    opacity: 0.9;
+}
+.img-ipath-5{
+    position: absolute;
+     top: 179px;
+      z-index: 2; 
+      width: 100%;
+}
+#Logo-congTy{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    top: 668px;
+    gap: 15px;
+}
+.img-logo1{
+    margin-top: 20px;
+    margin-left: 34px;
+}
+.logo-logo{
+    margin-top: 20px;
+margin-left: 7px;
+}
+#banToChuc{
+    text-decoration: underline; font-family:Myriad Pro,Regular; margin-top: 25px; margin-right: 30px; font-size: 22px;
+}
+#phan-gioi-thieu-hinh-logo{
+    display: flex; justify-content: space-between;
+}
+.h1-phan-gioi-thieu{
+    font-size: 50px;
+            font-family: Myriad Pro,Regular;
+            margin-top: 29px;
+            margin-left: 14px;
+             flex: 1;
+              margin-bottom: 36px;
+               color: #002a41;
+               word-spacing: 10px;
+}
+.gach-gioi-thieu{
+    width: 30%;
+     height: 3px;
+      background-color:
+       #f26522;
+        flex: 1;
+                margin-top: 53px;
+                margin-left: -23px;
+}
+.van-ban-gioi-thieu{
+    font-family: Myriad Pro,Regular;
+            word-spacing: 4.1px;
+            line-height: 30px;
+}
+#can-van-ban-gioi-thieu{
+    margin-left: 150px;
+     width: 400px; 
+     flex: 1;
+}
+.img-ipath-gioi-thieu-1{
+    margin-top: -60px;
+           width: 745px;
+}
+.can-gioi-thieu-van-ban{
+    display: flex; 
+    justify-content: space-evenly;
+}
+.img-ipath-gioi-thieu-2{
+    margin-top: -51px;
+    position: relative;
+}
+.img-ipath-gioi-thieu-3{
+    position: absolute; 
+    top: 0;
+     left: 0; 
+     margin-top: -73px; 
+}
+.can-chu-hoat-dong{
+    display: flex; flex-direction: column;
+          position: absolute;
+       top: 38px;
+       left: 521px;
+}
+.can-chinh-hoat-dong-1{
+    display: flex; margin-left: 108px;
+}
+.thanh-doc{
+    width: 110px;
+    height: 3px;
+    background-color: #f26522;
+    margin-top: 4px
+}
+.hinh-thoi{
+    width: 17px;
+         height: 12px;
+         transform: skew(336deg);
+         background-color: #ffffff;
+         margin-left: -34px;
+         margin: 0px 15px;
+}
+#can-kich-thuoc-khoi-gioi-thieu{
+    position: relative; 
+    height: 969px
+}
+
+    #khoi-3{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 60px;
+        position: relative;
+    }
+    .img-khoi-3-1{
+        flex: 1;
+        width: 100%;
+    }
+    .img-khoi-3-2{
+        flex: 1;
+        width: 100%;
+        position: relative;
+    }
+    .img-khoi-3-3{
+        position: absolute; 
+        left: 680px;
+        top: 71px;
+    }
+    .chu-san-giao-dich{
+        font-family: UTM Avo, Bold;
+        color: red;
+        position: absolute;
+        left: 654px;
+        top: 139px;
+        font-size: 17px;
+    }
+    .chu-bat-dong-san{
+        font-family: UTM Avo, Bold;
+        color: red;
+        position: absolute;
+        left: 644px;
+        top: 158px;
+        font-size: 21px;
+    }
+    .chu-danh-sach{
+        text-align: center;
+        font-size: 47px;
+        font-family: Myriad Pro,Regular;
+        word-spacing: 9px;
+        letter-spacing: 1px;
+    }
+    .can-hinh-thanh{
+        display: flex; margin-left: 627px;
+               margin-top: 45px;
+    }
+    .thanh-ben-trai{
+        width: 110px;
+        height: 3px;
+        background-color: #ff0000;
+        margin-top: 4px;
+    }
+    .thanh-o-giua{
+        width: 17px;
+        height: 12px;
+        transform: skew(336deg);
+        background-color: #003059;
+        margin-left: -34px;
+        margin: 0px 15px;
+    }
+    .thanh-ben-trai{
+        width: 110px;
+        height: 3px;
+        background-color: #ff0000;
+        margin-top: 4px;
+    }
+    .can-thong-tin{
+        display: flex;
+         margin-left: 
+         409px;margin-top: 
+         34px;
+    }
+    .khoi-cau-thu{
+        width: 143px;
+        height: 43px;
+        transform: skew(332deg);
+        background:linear-gradient(to right,#ff6502,#fd7d0d) ;
+        margin: 0px 12px; 
+    }
+    .chu-cau-thu-1{
+        font-family:Myriad Pro,Regular; 
+        color: white;
+         transform: skew(27deg);
+          margin-top: 10px; 
+          margin-left: 20px;
+    }
+    .chu-huan-luyen-vien{
+       font-family:Myriad Pro,Regular;
+        color: #013747; 
+        transform: skew(27deg); 
+         margin-top: 10px; 
+         margin-left: 25px;
+    }
+    .khoi-huan-luyen-vien{
+        width: 250px;
+        height: 43px;
+        transform: skew(332deg);
+        background-color: white;
+        border: 1px solid #fd7d0d;
+        margin: 0px 7px;
+    }
+    .khoi-doi-bong{
+        width: 140px;
+        height: 43px;
+        transform: skew(332deg);
+        background-color: white;
+        border: 1px solid #fd7d0d;
+        margin: 0px 15px;
+    }
+    .chu-doi-bong{
+        font-family:Myriad Pro,Regular;
+         color: #013747;
+          transform: skew(27deg); 
+            margin-top: 10px;
+             margin-left: 20px;
+    }
+    .duyem-logo-1{
+        margin-top: 42px;
+        margin-left: 30px;
+    }
+    .duyem-logo-2{
+        margin-top: 48px;
+        margin-left: 19px;
+    }
+    .duyem-logo-3{
+        margin-top: 42px;
+        margin-left: 16px;
+    }
+    .duyem-logo-4{
+        margin-top: 34px;
+        margin-left: 11px;
+    }
+    .duyem-logo-5{
+        margin-top: 21px;
+        margin-left: 21px;
+    }
+    .duyem-logo-6{
+        margin-top: 32px;
+        margin-left: 15px;
+    }
+    .duyem-logo-01{
+        margin-top: 52px;
+    }
+    .duyem-logo-02{
+        margin-top: 52px;
+    }
+    #phan-chan-footter{
+        position: relative;
+    }
+    .img-footter-1{
+        width: 100%;
+        margin-top: 22px;
+    }
+    .img-footter-2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    .img-footter-3{
+        position: absolute;
+        left: 651px;
+        top: 119px;
+        width: 16%;
+    }
+    .thanh-gradiend{
+        position: absolute;
+        top: 239px;
+        left: 395px;
+        background: linear-gradient(to right, #01333b,#192d2c,#51361d, #f05e03,#ff6201,#f05e03, #51361d,#192d2c,#01333b );
+        width: 766px;
+        height: 3px;
+        border-radius: 50%;
+    }
+    .chu-footter{
+        color: white;
+    position: absolute;
+    top: 263px;
+    word-spacing: 2px;
+    left: 530px;
+    }
+    .hr-1{
+        width: 4px;
+        height: 50px;
+        background-color: #fd7b0c;
+        margin-top: 30px;
+        margin-left: -4px;
+        margin-right: 1px;
+
+    }
+    .hr-2{
+        height: 7px;
+        width: 6px;
+        background-color: #fd7b0c;
+        height: 50px;
+        margin-top: 30px;
+        margin-right: 6px;
+    }
+    .img-ipath-1{
+        width: 100%;
+    }
+    #nav-1{
+        flex: 2.2;
+    z-index: 2;
+    margin-right: -5px;
+    }
+@media only screen and (min-width:678px) and (max-width: 1024px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .img-ipath-1{
+        width: 100%;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    #layout{
+        /* max-width: 100%; */
+        margin: 0px auto;
+        max-width:1024px;
+        display: block;
+        position: relative;
+        
+    }
+    .ul-ipath{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        gap: 18px;
+        margin-left: 150px;
+    }
+    #nav{
+        display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0px auto;
+    height: 100px;
+    }
+    #dau1{
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 160px;
+        align-items: center;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .img-ipath-1{
+        width: 100%;
+    }
+    .img-ipath-2 {
+        width: 32%;
+        position: absolute;
+        left: 360px;
+        top: 206px;
+    }
+    .img-ipath-3 {
+        position: absolute;
+        left: 380px;
+        top: 308px;
+        width: 28%;
+    }
+    .img-ipath-4 {
+        position: absolute;
+        left: 466px;
+        top: 297px;
+        width: 112px;
+        opacity: 0.9;
+    }
+    .img-ipath-5{
+        position: absolute;
+    top: 121px;
+    z-index: 2;
+    width: 100%;
+    }
+    ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        z-index: 2;
+        font-size: 16px;
+        font-family: Myriad Pro,Regular;
+        margin: auto;
+    }
+    #img{
+        width: 100%;
+        height: 46px;
+    }
+    #Logo-congTy{
+        display: flex;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    top: 440px;
+    gap: 15px;
+    }
+    .img-logo1{
+       width: 60%;
+       margin-left: 25px;
+    }
+    .logo-logo{
+        width: 70%;
+        margin-left: 15px;
+    }
+    .logo1{
+        width: 119px;
+    height: 55px;
+    background-color: aliceblue;
+    border: 1px solid #ffae00;
+    }
+    .logo {
+        width: 90px;
+        height: 55px;
+        background-color: aliceblue;
+        border: 1px solid #ffae00;
+    }
+    #banToChuc{
+        text-decoration: underline; 
+        font-family:Myriad Pro,Regular;
+         margin-top: 18px; 
+         margin-right: 30px; 
+         font-size: 16px;
+    }
+    #phan-gioi-thieu-hinh-logo{
+        display: flex;
+         justify-content: space-between;
+    }
+    .h1-phan-gioi-thieu{
+        font-size: 40px;
+                font-family: Myriad Pro,Regular;
+                margin-top: 29px;
+                margin-left: 23px;
+                 flex: 1;
+                  margin-bottom: 14px;
+                   color: #002a41;
+    }
+    .gach-gioi-thieu{
+        width: 30%;
+         height: 3px;
+          background-color:
+           #f26522;
+            flex: 1;
+                    margin-top: 53px;
+                    margin-left: -23px;
+    }
+    .van-ban-gioi-thieu{
+        font-family: Myriad Pro,Regular;
+        word-spacing: 2.1px;
+        line-height: 25px;
+    }
+    #can-van-ban-gioi-thieu{
+         width: 50%; 
+         margin-left: 25px;
+    }
+    .can-gioi-thieu-van-ban{
+        display: flex; 
+        justify-content: space-around;
+    }
+    .img-ipath-gioi-thieu-1{
+        width: 50%;
+    }
+    .btn-xemtiep {
+        width: 133px;
+        height: 40px;
+        background: linear-gradient(to right, #ff6402, #fd7b0c);
+        border: none;
+        border-radius: 23px;
+        margin-top: 27px;
+        margin-left: -5px;
+        color: white;
+        box-shadow: 7px 7px 8px 1px #c6c6c6;
+        color: white;
+        font-family: Myriad Pro,Regular;
+        font-style: bold;
+        font-size: 16px;
+        word-spacing: 3.5px;
+    }
+    .img-ipath-gioi-thieu-2{
+        margin-top: 0px;
+        position: relative;
+    }
+    .img-ipath-gioi-thieu-3{
+        position: absolute; 
+        top: 0;
+         left: 0; 
+         margin-top:-15px; 
+    }
+    .can-chu-hoat-dong{
+        display: flex; flex-direction: column;
+              position: absolute;
+           top: 50px;
+           left: 297px;
+    }
+    .chu1 {
+        font-family: Myriad Pro,Regular;
+        font-size: 40px;
+        color: white;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        word-spacing: 8.8px;
+        margin-bottom: 21px;
+    }
+    .can-chinh-hoat-dong-1{
+        display: flex; margin-left: 77px;
+    }
+    .thanh-doc{
+        width: 110px;
+        height: 3px;
+        background-color: #f26522;
+        margin-top: 4px
+    }
+    .hinh-thoi{
+        width: 17px;
+             height: 12px;
+             transform: skew(336deg);
+             background-color: #ffffff;
+             margin-left: -34px;
+             margin: 0px 15px;
+    }
+    .table-container{
+        width: 90%;
+        margin:0 auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        /* border-radius: 8px; */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: absolute;
+        top: 155px;
+        left: 45px;
+        border-top: 1px solid #ff6402;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        text-align: center;
+    }
+    table thead tr{
+        height:70px ;
+        width: 25%;
+    }
+    table thead tr td{
+        height:100px ;
+    }
+    thead tr {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        width: 100px;
+        padding: 30px;
+    }
+    
+    thead th {
+        padding: 12px 8px;
+        text-transform: uppercase;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #ffe5e5;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    td{
+        height: 50.4px;
+    }
+    tbody td {
+        padding: 12px 8px;
+        color: #333;
+    }
+    tbody tr:hover {
+        background-color: #f2f2f2;
+    }
+    tr:hover .duyem-table {
+        border-left: 5px solid #ff6402; 
+    }
+    #can-kich-thuoc-khoi-gioi-thieu{
+        position: relative; 
+        height: 761px;
+    }
+    #bocKhoi {
+        display: flex;
+        width: 60%;
+        margin-left: 203px;
+        justify-content: center;
+        gap: 15px;
+    }
+#khoi-3{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 60px;
+    position: relative;
+}
+.img-khoi-3-1{
+    flex: 1;
+    width: 50%;
+    margin-left: -10px;
+}
+.img-khoi-3-2{
+    flex: 1;
+    width: 50%;
+    position: relative;
+}
+.img-khoi-3-3{
+    position: absolute; 
+    left: 572px;
+    top: 71px;
+}
+.chu-san-giao-dich{
+    font-family: UTM Avo, Bold;
+    color: red;
+    position: absolute;
+    left: 557px;
+    top: 139px;
+    font-size: 12px;
+}
+.chu-bat-dong-san{
+    font-family: UTM Avo, Bold;
+    color: red;
+    position: absolute;
+    left: 547px;
+    top: 158px;
+    font-size: 16px;
+}
+.chu-danh-sach{
+    text-align: center;
+    font-size: 38px;
+    font-family: Myriad Pro,Regular;
+    word-spacing: 9px;
+    letter-spacing: 1px;
+}
+.can-hinh-thanh{
+    display: flex;
+    margin-left: 386px;
+    margin-top: 20px;
+}
+.thanh-ben-trai{
+    width: 110px;
+    height: 3px;
+    background-color: #ff0000;
+    margin-top: 4px;
+}
+.thanh-o-giua{
+    width: 17px;
+    height: 12px;
+    transform: skew(336deg);
+    background-color: #003059;
+    margin-left: -34px;
+    margin: 0px 15px;
+}
+.thanh-ben-trai{
+    width: 110px;
+    height: 3px;
+    background-color: #ff0000;
+    margin-top: 4px;
+}
+.can-thong-tin{
+    display: flex;
+    margin-left: 227px;
+    margin-top: 34px;
+}
+.khoi-cau-thu{
+    width: 133px;
+    height: 43px;
+    transform: skew(332deg);
+    background:linear-gradient(to right,#ff6502,#fd7d0d) ;
+    margin: 0px 12px; 
+}
+.chu-cau-thu-1{
+    font-family:Myriad Pro,Regular; 
+    color: white;
+     transform: skew(27deg);
+      margin-top: 10px; 
+      margin-left: 20px;
+      font-size: 22px;
+}
+.chu-huan-luyen-vien{
+   font-family:Myriad Pro,Regular;
+    color: #013747; 
+    transform: skew(27deg); 
+     margin-top: 10px; 
+     margin-left: 25px;
+     font-size: 22px;
+}
+.khoi-huan-luyen-vien{
+    width: 240px;
+    height: 43px;
+    transform: skew(332deg);
+    background-color: white;
+    border: 1px solid #fd7d0d;
+    margin: 0px 7px;
+}
+.khoi-doi-bong{
+    width: 133px;
+    height: 43px;
+    transform: skew(332deg);
+    background-color: white;
+    border: 1px solid #fd7d0d;
+    margin: 0px 15px;
+}
+.chu-doi-bong{
+    font-family:Myriad Pro,Regular;
+     color: #013747;
+      transform: skew(27deg); 
+        margin-top: 10px;
+         margin-left: 14px;
+         font-size: 22px;
+}
+#cau-thu {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 59px;
+}
+.than-bg {
+    height: 2250px;
+    background-color: #eefdff;
+    width: 100%;
+    margin-top: -141px;
+    z-index: 2;
+}
+#logo-khachHang {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: auto;
+    margin-top: 50px;
+    gap: 20px;
+    margin-left: -4px;
+
+}
+
+  .logo-khachHang-1{
+    width: 130px;
+    height:70px;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 8px 2px #cecaca;
+  }
+  .duyem-logo{
+    width: 80%;
+  }
+  .duyem-logo-1{
+    margin-top: 24px;
+    margin-left: 17px;
+}
+.duyem-logo-2{
+    margin-top: 26px;
+    margin-left: 15px;
+}
+.duyem-logo-3{
+    margin-top: 26px;
+    margin-left: 14px;
+}
+.duyem-logo-4{
+    margin-top: 22px;
+    margin-left: 14px;
+}
+.duyem-logo-5{
+    margin-top: 10px;
+    margin-left: 14px;
+}
+.duyem-logo-6{
+    margin-top: 20px;
+    margin-left: 13px;
+}
+.duyem-logo-01{
+    margin-top: 27px;
+}
+.duyem-logo-02{
+    margin-top: 27px;
+}
+#phan-chan-footter{
+    position: relative;
+}
+.img-footter-1{
+    width: 100%;
+    margin-top: 22px;
+}
+.img-footter-2{
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 100%;
+}
+.img-footter-3{
+    position: absolute;
+    left: 430px;
+    top: 69px;
+    width: 16%;
+}
+.thanh-gradiend{
+    position: absolute;
+    top: 147px;
+    left: 143px;
+    background: linear-gradient(to right, #01333b,#192d2c,#51361d, #f05e03,#ff6201,#f05e03, #51361d,#192d2c,#01333b );
+    width: 766px;
+    height: 1.8px;
+    border-radius: 50%;
+}
+.chu-footter{
+    color: white;
+    position: absolute;
+    top: 176px;
+    word-spacing: 2px;
+    left: 320px;
+    font-size: 14px;
+}
+.img-ipath-gioi-thieu-01{
+    position: absolute;
+    top: 670px;
+    right: 192px;
+}
+.img-ipath-gioi-thieu-02{
+    position: absolute;
+    top: 692px;
+    right: 215px;
+}
+#nav-1{
+    flex: 2.2; z-index: 2; margin-right: -5px;
+}
+  }
+  @media only screen and (max-width: 667px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #layout{
+        width:100%;
+        display: block;
+        position: relative;
+    }
+    #dau1{
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    header{
+        height: 49px;
+        width: 100%;
+        background-color: #021b2d;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+    }
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        height: 50px;
+    }
+    #duyem{
+        height: 50px;
+    }
+    #nav-1{
+        width: 100%;
+
+    }
+    #img {
+        width: 102px;
+    height: 40px;
+    margin-top: 0px;
+    padding: 6px;
+    margin-top: 6px;
+    }
+    #nav-2 {
+        background-color: #000305;
+        width: 30px; 
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
+        overflow: hidden; 
+        border-radius: 10px;
+        z-index: 3;
+    }
+    
+    #nav-2:focus-within {
+        border-top: 3px solid #f05e03;
+        top: 40px;
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        height: 230px;
+        border-radius: 0px;
+        right: 0px;
+        background-color: wheat;
+        overflow: hidden;
+    }
+    
+    .ul-ipath {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%; 
+        display: none;
+    }
+    
+    #nav-2:focus-within .ul-ipath {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+    }
+    
+    .ul-ipath li {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .ul-ipath li a {
+        display: block;
+        text-align: left;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+    }
+    
+    #nav-2:focus-within .ul-ipath li a:hover {
+        background-color: #f05e03;
+        color: #fff;
+    }
+    .img-ipath-2 {
+        width: 25%;
+        position: absolute;
+        left: 174px;
+        top: 115px;
+    }
+    .img-ipath-3 {
+        position: absolute;
+        left: 175px;
+        top: 151px;
+        width: 25%;
+    }
+    .img-ipath-4 {
+        position: absolute;
+        left: 212px;
+        top: 148px;
+        width: 47px;
+        opacity: 0.9;
+    }
+    .img-ipath-5 {
+        position: absolute;
+        top: 57px;
+        z-index: 2;
+        width: 100%;
+    }
+    #Logo-congTy {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        left: 93px;
+        top: 205px;
+        gap: 5px;
+    }
+    #banToChuc {
+        text-decoration: underline;
+        font-family: Myriad Pro, Regular;
+        margin-top: 10px;
+        margin-right: 30px;
+        font-size: 6px;
+    }
+    .logo1 {
+        width: 55px;
+        height: 20px;
+        background-color: aliceblue;
+        border: 1px solid #ffae00;
+    }
+    .img-logo1 {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 90%;
+    }
+    .logo {
+        width: 40px;
+        height: 20px;
+        background-color: aliceblue;
+        border: 1px solid #ffae00;
+    }
+    .logo-logo {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 90%;
+    }
+    .h1-phan-gioi-thieu {
+        font-size: 24px;
+        font-family: Myriad Pro, Regular;
+        margin-top: 29px;
+        margin-left: 14px;
+        margin-bottom: 36px;
+        color: #002a41;
+        word-spacing: 10px;
+        flex: 0.3;
+        display: inline;
+        letter-spacing: 1.5px;
+    }
+    #can-kich-thuoc-khoi-gioi-thieu {
+        position: relative;
+        height: 510px;
+    }
+    #can-van-ban-gioi-thieu {
+        margin-left: 4px;
+        width: 95%;
+        margin: 0 auto;
+        flex: 1;
+    }
+    #phan-gioi-thieu-hinh-logo {
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
     }
-
-    article, aside {
-        margin-bottom: 10px;
+    .can-gioi-thieu-van-ban {
+        display: flex;
+        justify-content: space-evenly;
+        width: 95%;
     }
-
-    aside {
-        margin-bottom: 0;
+    .gach-gioi-thieu {
+        width: 30%;
+        height: 3px;
+        background-color: #f26522;
+        flex: 1;
+        margin-top: 53px;
+        margin-left: -0px;
     }
+    .hr-1 {
+        width: 4px;
+        height: 50px;
+        background-color: #fd7b0c;
+        margin-top: 30px;
+        margin-left: 4px;
+        margin-right: 1px;
+    }
+    .van-ban-gioi-thieu {
+        font-family: Myriad Pro, Regular;
+        word-spacing: 1.1px;
+        line-height: 30px;
+        font-size: 12px;
+        text-align: justify;
+    }
+    .btn-xemtiep {
+        width: 68px;
+        height: 23px;
+        background: linear-gradient(to right, #ff6402, #fd7b0c);
+        border: none;
+        border-radius: 23px;
+        margin-top: 10px;
+        margin-left: 5px;
+        color: white;
+        box-shadow: 2px 2px 4px 1px #c6c6c6;
+        color: white;
+        font-family: Myriad Pro, Regular;
+        font-style: bold;
+        font-size: 8px;
+        word-spacing: 1.5px;
+    }
+    .img-ipath-gioi-thieu-1 {
+        margin-top: 0px;
+        width: 100%;
+        margin-left: -10px;
+    }
+    .img-ipath-gioi-thieu-01 {
+        position: absolute;
+        top: 748px;
+        right: 200px;
+        width: 60px;
+    }
+    .img-ipath-gioi-thieu-02 {
+        position: absolute;
+        top: 763px;
+        right: 216px;
+        width: 21px;
+    }
+    .img-ipath-gioi-thieu-2 {
+        margin-top: 0px;
+        position: relative;
+    }
+    .img-ipath-gioi-thieu-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -7px;
+    }
+    .table-container {
+        width: 95%;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        margin: 0 14px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    thead tr {
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    
+    thead th {
+        padding: 15px 8px;
+        text-transform: uppercase;
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: #ffe5e5;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    
+    td {
+        height: 10.4px;
+        font-size: 12px;
+        padding: 12px 8px;
+        color: #333;
+    }
+    
+    tbody tr:hover {
+        background-color: #f2f2f2;
+       
+    }
+    table thead tr {
+        height: 34px;
+        width: 25%;
+    }
+    .duyem-table {
+        box-shadow: inset 0 0 0 0 #ff6402; 
+        transition: box-shadow 0.3s ease,
+         background-color 0.3s ease;
+    }
+    
+    tr:hover .duyem-table {
+        box-shadow: inset 3px 0 0 #ff6402; 
+        height: 10.4px;
+    }
+    
+    .can-chu-hoat-dong {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 18px;
+        left: 50px;
+    }
+    .chu1 {
+        font-family: Myriad Pro, Regular;
+        font-size: 15px;
+        color: white;
+        margin: 0 103px;
+        word-spacing: 3.8px;
+        margin-bottom: 3px;
+    }
+    .thanh-doc {
+        width: 55px;
+        height: 1.5px;
+        background-color: #f26522;
+        margin-top: 4px;
+    }
+    .hinh-thoi {
+        width: 11px;
+        height: 9px;
+        transform: skew(336deg);
+        background-color: #ffffff;
+        margin-left: -34px;
+        margin: 0px 15px;
+    }
+    #bocKhoi {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 15px;
+    }
+    #khoi-1 {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background-color: white;
+        border: 1px solid #ff6402;
+        padding: 10px 12px;
+        display: flex;
+    }
+    #khoi-2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        background-color: #ff6402;
+        padding: 10px 12px;
+        display: flex;
+    }
+    #khoi-3 {
+        display: flex;
+        width: 98%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 30px;
+        position: relative;
+        flex-direction: column;
+    }
+    .img-khoi-3-1 {
+        flex: 1;
+        width: 100%;
+    }
+    .img-khoi-3-2 {
+        flex: 1;
+        width: 100%;
+    }
+    .chu-san-giao-dich {
+        font-family: UTM Avo, Bold;
+        color: red;
+        position: absolute;
+        left: 42px;
+        top: 327px;
+        font-size: 12px;
+    }
+    .chu-bat-dong-san {
+        font-family: UTM Avo, Bold;
+        color: red;
+        position: absolute;
+        left: 31px;
+        top: 346px;
+        font-size: 16px;
+    }
+    .img-khoi-3-3 {
+        position: absolute;
+        left: 50px;
+        top: 262px;
+    }
+    
+
 }
 
-@media (max-width: 480px) {
-    .product {
-        flex: 1 1 150px; 
-        max-width: 300px; 
-    }
-}
 </style>
 <body>
-    <header>
-       <div class="phandau">
-       <div><i class="fab fa-wordpress" style="margin-left: 20px;"></i></div>
-        <div class="phandau1">
-            <button>Đăng nhập</button>
-        <button>Đăng ký</button>
-        </div>
-       </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">EDM</a></li>
-            <li>
-                <a href="#">REMIX</a>
-                <div class="dropdown-content">
-                    <a href="#"> Con liên kết 1</a>
-                    <a href="#"> Con liên kết 2</a>
-                    <a href="#"> Con liên kết 3</a>
-                </div>
-            </li>
-            <li><a href="#">KARAOKE</a></li>
-        </ul>
-    </nav>
-    <div class="main">
-        <article>
-            <h2>Our Products</h2>
-            <div class="product-container">
-                <div class="product">
-                    <a href="video1.html" style="text-decoration: none; color: aliceblue;">
-                        <img src="Screenshot 2024-10-12 134652.png" alt="Product 1" style="border-radius: 10px;" >
-                        <div class="info">
-                            <div class="title">TRANG GIẤY TRẮNG REMIX - HÀ NHI X DTN X H2O | NHẠC TRẺ REMIX HOUSE LAK 2024</div>
-                            <div class="channel">Nonstop TV</div>
-                            <div class="views-date">122 N lượt xem · 1 tháng trước</div>
-                    </a>
+    <div id="layout">
+        <header>
+            <div id="dau1">
+                <i class="fab fa-facebook-f" style="color: chocolate; margin-right: 20px;"></i>
+                <i class="fab fa-google-plus-g" style="color: chocolate; margin-right: 12px;"></i>
+                <i class="fab fa-youtube" style="color: chocolate;"></i>
+            </div>
+        </header>
+        <nav>
+            <div id="duyem">
+                <div id="nav">
+                    <div id="nav-1">
+                        <img id="img" src="img/index.psd.png" alt="" width="100%">
                     </div>
-                </div>
-                
-                <div class="product">
-                   <a href="video2.html" style="text-decoration: none; color: aliceblue;">
-                    <img src="Screenshot 2024-10-12 135529.png"  alt="Product 2" style="border-radius: 10px;">
-                    <div class="info">
-                        <div class="title"> ĐỪNG HỎI EM ỔN KHÔNG REMIX - (DIỆU VÂN x H2K) PHẠM TÀI x AM REMIX - GIÁ NHƯ ĐỜI LÀM GÌ CÓ GIÁ NHƯ</div>
-                        <div class="channel">Nonstop TV</div>
-                        <div class="views-date">96 N lượt xem 9 ngày trước</div>
-                       
-                    </div>
-                   </a>
-                </div>
-                <div class="product">
-                <a href="video3.html" style="text-decoration: none; color: aliceblue;">
-                    <img src="Screenshot 2024-10-12 140216.png"  alt="Product 3" style="border-radius: 10px;">
-                    <div class="info">
-                        <div class="title">Cao Ốc 20 ft Về - VH Remix - Hot Trend Tiktok 2024 - Bxh Nhạc Trẻ Tuyển Chọn 2024
-                            </div>
-                        <div class="channel">Đĩa Than Chill</div>
-                        <div class="views-date">428 N lượt xem1 tháng trước</div>
-                    </div>
-                </a>
-                </div>
-                <div class="product">
-                    <a href="video4.html" style="text-decoration: none; color: aliceblue;">
-                        <img src="Screenshot 2024-10-12 140804.png"  alt="Product 3" style="border-radius: 10px;">
-                    <div class="info">
-                        <div class="title"> NGƯỜI MUỐN Ở LẠI THÀNH PHỐ, NGƯỜI CHỌN CHỞ VỀ QUÊ NHÀ, TINH VỆ FT FAKE LOVE - TUẤN SMILE x DOZ REMIX</div>
-                        <div class="channel">CAPCUT MUSIC</div>
-                        <div class="views-date">
-                            590 N lượt xem
-                            6 tháng trước</div>
-                    </div>
-                    </a>
-                </div>
-             
-
-                <div class="product">
-                   <a href="video5.html" style="text-decoration: none; color: aliceblue;">
-                    <img src="Screenshot 2024-10-12 141039.png"  alt="Product 3" style="border-radius: 10px;">
-                    <div class="info">
-                        <div class="title">Hạnh Phúc Nhé - Tùng Anh ( Thái Hoàng Remix ) | Hot TikTok 2024 - Audio Lyrics Video                        </div>
-                        <div class="channel">CAPCUT MUSIC</div>
-                        <div class="views-date">2 Tr lượt xem
-                            1 năm trước</div>
-                    </div>
-                   </a>
-                </div>
-             
-                <div class="product">
-                   <a href="video6.html" style="text-decoration: none; color: aliceblue;">
-                    <img src="Screenshot 2024-10-12 141406.png"  alt="Product 3" style="border-radius: 10px;">
-                    <div class="info">
-                        <div class="title">OH OH OH x DISCO BALL REMIX (DJ THÁI HOÀNG REMIX) || NHẠC REMIX CỰC CHÁY HOT TIKTOK 2024
-                        </div>
-                        <div class="channel">Dj Lucky Official</div>
-                        <div class="views-date">
-                            3,9 N lượt xem
-                            1 ngày trước</div>
-                    </div>
-                   </a>
+                   <div id="nav-2" tabindex="0">
+                    <ul class="ul-ipath">
+                        <li style="margin-left: 0px;"><a class="one" style=" letter-spacing: 0.5px;" href="">TRANG
+                                CHỦ</a></li>
+                        <li><a class="chu" style="
+                    letter-spacing: 1px;" href="">GIỚI THIỆU</a></li>
+                        <li><a class="true" style="" href="">KẾT QUẢ DỰ ĐOÁN</a></li>
+                        <li class="menu-item">
+                            <a href="#">BẢNG XẾP HẠNG</a>
+                            <span class="arrow"></span>
+                            <span class="arrow1"></span>
+                            <ul class="submenu">
+                                <li style="height: 5px;"><span class="dot"></span> Cầu thủ được yêu thích</a></li>
+                                <li style="height: 5px;"><span class="dot"></span> Huấn luyện viên được yêu thích</a>
+                                </li>
+                                <li style="height: 5px;"><span class="dot"></span> Huấn luyện viên được yêu thích</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="ai" style="letter-spacing: 0.5px; gap: 0px;" href="">THỂ LỆ</a></li>
+                    </ul>
+                   </div>
                 </div>
             </div>
-        </article>
-        <aside>
-            <h2>Thông tin bổ sung</h2>
-            <p>Đây là phần thông tin bổ sung hoặc thanh bên. Nội dung ở đây có thể dài và sẽ được cuộn nếu vượt quá chiều cao của phần tử.</p>
-        </aside>
+            <div style="width: 100%; margin: 0 auto; display: block;">
+                <img class="img-ipath-1" src="img/Layer 518.png" alt="">
+            </div>
+        </nav>
+
+        <img class="img-ipath-2" src="img/Layer111.png" alt="" >
+        <img class="img-ipath-3" src="img/BACKGROUND-5.png" alt="" >
+        <img  class="img-ipath-4" src="img/hinhBongDa.png" alt="">
+        <img class="img-ipath-5" src="img/Rectangle 70.png" alt="">
+
+        <div id="Logo-congTy"> 
+           
+            <p id="banToChuc">Ban tổ chức:</p>
+            <div class="logo1">
+                <img class="img-logo1" src="img/LOGO-BYTESOFT.png" alt="" >
+            </div>
+            <div class="logo">
+                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="" >
+            </div>
+          
+            <div class="logo">
+                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="" >
+            </div>
+            <div class="logo">
+                <img class="logo-logo" src="img/LOGO-BYTESOFT.png" alt="">
+            </div>
+        </div>
+
+
+        <div id="phan-gioi-thieu-hinh-logo" >
+            <div id="can-van-ban-gioi-thieu">
+                <div class="can-gioi-thieu-van-ban" >
+                    <hr class="hr-1">
+                    <hr class="hr-2">
+                    <h1 class="h1-phan-gioi-thieu" >GIỚI THIỆU</h1>
+                    <h1 class="gach-gioi-thieu"></h1>
+                </div>
+                <span class="van-ban-gioi-thieu">Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months
+                    set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself
+                    his. Of instantly excellent therefore difficult he northward. Joy green but least marry rapid quiet
+                    but. Way devonshire introduced expression saw travelling affronting. Her and effects affixed pretend
+                    account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in
+                    listening. </span>
+                <div>
+                    <button class="btn-xemtiep">Xem tiếp</button>
+                </div>
+            </div>
+            <img class="img-ipath-gioi-thieu-1" src="img/Untitled-55.png" alt="">
+            <img class="img-ipath-gioi-thieu-01" src="img/Untitled-19.png" alt="">
+            <img class="img-ipath-gioi-thieu-02" src="img/Untitled-20.png" alt="">
+        </div>
+        <div style="position: relative;"></div>
+        <div id="can-kich-thuoc-khoi-gioi-thieu" >
+            <img class="img-ipath-gioi-thieu-2" src="img/Untitled-7.png" alt="" width="100%" >
+            <img class="img-ipath-gioi-thieu-3" src="img/Untitled-8.png" alt="" width="100%">
+            <div class="can-chu-hoat-dong" >
+                <h1 class="chu1">HOẠT ĐỘNG GẦN ĐÂY</h1>
+                <div class="can-chinh-hoat-dong-1">
+                    <h1 class="thanh-doc"></h1>
+                    <div class="hinh-thoi"></div>
+                    <h1 class="thanh-doc"></h1>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MÃ VOTE</th>
+                            <th>NGƯỜI VOTE</th>
+                            <th>THÍ SINH</th>
+                            <th>THỜI GIAN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                        <tr>
+                            <td class="duyem-table">09861277...</td>
+                            <td>highsgbb98dsngbfasff</td>
+                            <td>Nguyễn Thị Thu Phương</td>
+                            <td>2018-12-28 07:44:23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div id="bocKhoi">
+            <div id="khoi-1">
+                <img src="img/Untitled-10.png" alt="">
+            </div>
+            <div id="khoi-2">
+                <img src="img/Untitled-9.png" alt="">
+            </div>
+        </div>
+        <div id="khoi-3">
+            <img class="img-khoi-3-1" src="img/Untitled-11.png" alt="" >
+            <img class="img-khoi-3-2" src="img/Untitled-13.png" alt="" >
+            <img class="img-khoi-3-3" src="img/Layer 3.png" alt="" >
+            <h1 class="chu-san-giao-dich">SẢN GIAO DỊCH</h1>
+            <h1 class="chu-bat-dong-san">BẤT ĐỘNG SẢN</h1>
+        </div>
+        <div class="dau-bg">
+        </div>
+        <div class="than-bg">
+            <h1 class="chu-danh-sach" >DANH SÁCH VOTE</h1>
+            <div class="can-hinh-thanh">
+                <h1 class="thanh-ben-trai"></h1>
+                <div class="thanh-o-giua"></div>
+                <h1 class="thanh-ben-trai"></h1>
+            </div>
+            <div class="can-thong-tin">
+                <div class="khoi-cau-thu">
+                    <h2 class="chu-cau-thu-1">CẦU THỦ</h2>
+                </div>
+                <div class="khoi-huan-luyen-vien">
+                    <h2 class="chu-huan-luyen-vien">HUẤN LUYỆN VIÊN</h2>
+                </div>
+                <div class="khoi-doi-bong">
+                    <h2 class="chu-doi-bong">ĐỘI BÓNG</h2>
+                </div>
+            </div>
+            <div>
+            </div>
+
+            <div id="cau-thu">
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                   
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="cau-thu-1">
+                    <img src="img/Untitled-14.png" alt="" style="z-index: 3; position: absolute; width: 100%;">
+                    <h4 style="
+                    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;">NGUYỄN VĂN ABCZ</h4>
+    <hr style="  
+        position: absolute;
+    left: 107px;
+    top: 59px;
+    width: 73px;
+    height: 3px;
+    z-index: 3; background-color: white;">
+                    <div class="cau-thu-1-1">
+                        <img src="img/Untitled-15.png" alt=""  style="margin-top:92px;
+                        margin-left: 85px;
+                        width: 47%;
+                    ">
+                    <img src="img/Untitled-16.png" alt="" style="margin-left: -136px;">
+                    <div style="margin-top: 70px; text-align: center;">
+                    <h4 style="margin-bottom: 10px;">Số Báo Danh : 2019-134 </h4>
+                    <h4>Tổng Điểm : 5421</h4>
+                    <div class="arrow-up ">
+                    </div>
+                    <div class="arrow-down">
+                        <h1 style="font-size: 14px; color: white; margin: 12px auto;" >BÌNH CHỌN</h1>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="duoi-bg"></div>
+
+        <div id="logo-khachHang">
+            <div>
+                <img class="duyem-logo duyem-logo-01" src="img/Untitled-17.png" alt="" >
+            </div>
+           <div class="logo-khachHang-1">
+                <img class="duyem-logo duyem-logo-1" src="img/1.png" alt="" >
+           </div>
+            <div class="logo-khachHang-1">
+                <img class="duyem-logo duyem-logo-2" src="img/2.png" alt="">
+            </div>
+            <div class="logo-khachHang-1"> 
+                <img class="duyem-logo duyem-logo-3" src="img/3.png" alt="" >
+            </div>
+            <div class="logo-khachHang-1">
+                <img class="duyem-logo duyem-logo-4" src="img/4.png" alt="">
+            </div>
+            <div class="logo-khachHang-1">
+                <img class="duyem-logo duyem-logo-5" src="img/7.png" alt="" >
+            </div>
+            <div class="logo-khachHang-1">
+                <img class="duyem-logo duyem-logo-6" src="img/6.png" alt="" >
+            </div>
+           <div>
+            <img class="duyem-logo duyem-logo-02" src="img/Untitled-18.png" alt="">
+           </div>
+        </div>
+        <footer>
+            <div id="phan-chan-footter">
+                <img class="img-footter-1" src="img/football-stadium-background-realistic-style_23-2147862886.png" alt="">
+                <img class="img-footter-2" src="img/Layer 26 copy.png" alt="" >
+                <img class="img-footter-3" src="img/index.psd.png" alt="">
+               <div class="thanh-gradiend">
+               </div>
+               <div>
+                <h4 class="chu-footter">Bản quyền © 2018 bởi Bytesoft Viet Nam. All rights reserved.</h4>
+               </div>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <p>Chân Trang</p>
-    </footer>
 </body>
+
 </html>
