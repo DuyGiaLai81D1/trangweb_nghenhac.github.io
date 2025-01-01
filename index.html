@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <style>
-  *{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,9 @@ body{
     flex: 0.2;
      z-index: 2;
       margin-right: -5px;
+}
+.an-icon{
+    display: none;
 }
 #layout{
     
@@ -763,6 +766,42 @@ margin-left: 7px;
     z-index: 2;
     margin-right: -5px;
     }
+    .ten-cau-thu{
+    position: absolute;
+    left: 59px;
+    top: 27px;
+    z-index: 3;
+    color: white;
+    word-spacing: 7px;
+    }
+    .gach-dong-cau-thu{
+        position: absolute;
+        left: 107px;
+        top: 59px;
+        width: 73px;
+        height: 3px;
+        z-index: 3; background-color: white;
+    }
+    .session-1{
+        margin-top:92px;
+        margin-left: 85px;
+        width: 47%;
+    }
+    .session-2{
+        margin-left: -136px;
+    }
+    .session-3{
+        margin-top: 70px;
+         text-align: center;
+    }
+    .session-4{
+        margin-bottom: 10px;
+    }
+    .session-5{
+        font-size: 14px; 
+        color: white;
+         margin: 12px auto;
+    }
 @media only screen and (min-width:678px) and (max-width: 1024px) {
 
     *{
@@ -792,6 +831,42 @@ margin-left: 7px;
         position: relative;
         
     }
+    .ten-cau-thu{
+        position: absolute;
+        left: 59px;
+        top: 27px;
+        z-index: 3;
+        color: white;
+        word-spacing: 7px;
+        }
+        .gach-dong-cau-thu{
+            position: absolute;
+            left: 107px;
+            top: 59px;
+            width: 73px;
+            height: 3px;
+            z-index: 3; background-color: white;
+        }
+        .session-1{
+            margin-top:92px;
+            margin-left: 85px;
+            width: 47%;
+        }
+        .session-2{
+            margin-left: -136px;
+        }
+        .session-3{
+            margin-top: 70px;
+             text-align: center;
+        }
+        .session-4{
+            margin-bottom: 10px;
+        }
+        .session-5{
+            font-size: 14px; 
+            color: white;
+             margin: 12px auto;
+        }
     .ul-ipath{
         display: flex;
         justify-content: center;
@@ -1317,11 +1392,11 @@ margin-left: 7px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-size: 20px;
+        font-size: 14px;
         margin: 0 auto;
     }
-    header{
-        height: 49px;
+    header {
+        height: 40px;
         width: 100%;
         background-color: #021b2d;
         display: flex;
@@ -1334,22 +1409,29 @@ margin-left: 7px;
         width: 95%;
         height: 50px;
     }
-    #duyem{
-        height: 50px;
+    #duyem {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100px;
+        top: 40px;
+        position: absolute;
+    }
+    #duyem {
+        height: 40px;
     }
     #nav-1{
         width: 100%;
 
     }
     #img {
-        width: 102px;
-    height: 40px;
-    margin-top: 0px;
-    padding: 6px;
-    margin-top: 6px;
+        width: 82px;
+        height: 40px;
+        margin-top: 0px;
+        padding: 11px;
+        margin-top: 0px;
     }
     #nav-2 {
-        background-color: #000305;
+        /* background-color: rgba(255, 255, 255, 0.5); */
         width: 30px; 
         height: 30px;
         margin-top: 10px;
@@ -1359,6 +1441,7 @@ margin-left: 7px;
         overflow: hidden; 
         border-radius: 10px;
         z-index: 3;
+        transition: all 0.6s ease;
     }
     
     #nav-2:focus-within {
@@ -1367,13 +1450,67 @@ margin-left: 7px;
         position: absolute;
         z-index: 4;
         width: 100%;
-        height: 230px;
+        height: 180px;
         border-radius: 0px;
         right: 0px;
-        background-color: wheat;
+        background-color: rgba(255, 255, 255, 0.8);
         overflow: hidden;
-    }
-    
+        .arrow1 {
+            display: none;
+        }
+        .arrow{
+            display: none;
+        }
+
+}
+.an-icon{
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    display: block;
+    margin-top: 2px;
+margin-left: 1.8px;
+position: absolute;
+}
+.submenu {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 200px;
+    height: 140px;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+    border-bottom:3px solid #F95411;
+    border-top: 20px solid rgba(255, 255, 255, 0.1) ;
+}
+
+.submenu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.submenu .dot {
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.menu-item:hover .submenu,
+.menu-item:hover .arrow {
+    display: block;
+}
+.menu-item:hover .submenu {
+    pointer-events: auto;
+}
     .ul-ipath {
         list-style: none;
         padding: 0;
@@ -1393,15 +1530,15 @@ margin-left: 7px;
     
     .ul-ipath li {
         width: 100%;
-        height: 40px;
+        height: 20px;
     }
     
     .ul-ipath li a {
         display: block;
         text-align: left;
         padding: 5px 15px;
-        font-size: 14px;
-        color: #000;
+        font-size: 10px;
+        color: black;
         text-decoration: none;
         width: 100%; 
         box-sizing: border-box; 
@@ -1415,27 +1552,27 @@ margin-left: 7px;
         color: #fff;
     }
     .img-ipath-2 {
-        width: 25%;
+        width: 24%;
         position: absolute;
-        left: 174px;
-        top: 115px;
+        left: 146px;
+        top: 101px;
     }
     .img-ipath-3 {
         position: absolute;
-        left: 175px;
-        top: 151px;
-        width: 25%;
+        left: 162px;
+        top: 128px;
+        width: 16%;
     }
     .img-ipath-4 {
         position: absolute;
-        left: 212px;
-        top: 148px;
-        width: 47px;
+        left: 181px;
+        top: 125px;
+        width: 26px;
         opacity: 0.9;
     }
     .img-ipath-5 {
         position: absolute;
-        top: 57px;
+        top: 46px;
         z-index: 2;
         width: 100%;
     }
@@ -1443,41 +1580,43 @@ margin-left: 7px;
         display: flex;
         position: absolute;
         z-index: 2;
-        left: 93px;
-        top: 205px;
+        left: 78px;
+    top: 166px;
         gap: 5px;
     }
     #banToChuc {
         text-decoration: underline;
         font-family: Myriad Pro, Regular;
-        margin-top: 10px;
-        margin-right: 30px;
+        margin-top: 6px;
+        margin-right: 16px;
         font-size: 6px;
-    }
+    }   
     .logo1 {
-        width: 55px;
-        height: 20px;
+        width: 41px;
+        height: 18px;
         background-color: aliceblue;
         border: 1px solid #ffae00;
     }
     .img-logo1 {
-        margin-top: 3px;
+        margin-top: 0px;
         margin-left: 3px;
-        width: 90%;
+        width: 84%;
+        margin-bottom: 2px;
     }
     .logo {
-        width: 40px;
-        height: 20px;
+        width: 29px;
+        height: 18px;
         background-color: aliceblue;
         border: 1px solid #ffae00;
     }
     .logo-logo {
-        margin-top: 3px;
+        margin-top: 0px;
         margin-left: 3px;
-        width: 90%;
+        width: 84%;
+        margin-bottom: 3px;
     }
     .h1-phan-gioi-thieu {
-        font-size: 24px;
+        font-size: 16px;
         font-family: Myriad Pro, Regular;
         margin-top: 29px;
         margin-left: 14px;
@@ -1490,7 +1629,7 @@ margin-left: 7px;
     }
     #can-kich-thuoc-khoi-gioi-thieu {
         position: relative;
-        height: 510px;
+        height: 293px;
     }
     #can-van-ban-gioi-thieu {
         margin-left: 4px;
@@ -1506,7 +1645,7 @@ margin-left: 7px;
     .can-gioi-thieu-van-ban {
         display: flex;
         justify-content: space-evenly;
-        width: 95%;
+        width: 100%;
     }
     .gach-gioi-thieu {
         width: 30%;
@@ -1517,19 +1656,31 @@ margin-left: 7px;
         margin-left: -0px;
     }
     .hr-1 {
-        width: 4px;
+        width: 2.5px;
         height: 50px;
         background-color: #fd7b0c;
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 4px;
         margin-right: 1px;
+        border: none;
+    }
+    .hr-2 {
+        height: 7px;
+        width: 4px;
+        background-color: #fd7b0c;
+        height: 50px;
+        margin-top: 25px;
+        margin-right: 6px;
+        border: none;
     }
     .van-ban-gioi-thieu {
         font-family: Myriad Pro, Regular;
-        word-spacing: 1.1px;
+        word-spacing: 2.1px;
         line-height: 30px;
-        font-size: 12px;
+        font-size: 10px;
         text-align: justify;
+        width: 100%;
+        height: auto;
     }
     .btn-xemtiep {
         width: 68px;
@@ -1580,9 +1731,9 @@ margin-left: 7px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         overflow: hidden;
         position: absolute;
-        top: 65px;
+        top: 55px;
         left: 0px;
-        margin: 0 14px;
+        margin: 0 9px;
     }
     
     table {
@@ -1594,11 +1745,11 @@ margin-left: 7px;
     thead tr {
         color: white;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 8px;
     }
     
     thead th {
-        padding: 15px 8px;
+        padding: 10px 8px;
         text-transform: uppercase;
     }
     
@@ -1611,18 +1762,21 @@ margin-left: 7px;
     }
     
     td {
-        height: 10.4px;
-        font-size: 12px;
-        padding: 12px 8px;
+        height: 8.4px;
+        font-size: 6px;
+        padding: 6px 8px;
         color: #333;
     }
-    
+    tbody td {
+        padding: 6px 5px;
+        color: #333;
+    }
     tbody tr:hover {
         background-color: #f2f2f2;
        
     }
     table thead tr {
-        height: 34px;
+        height: 24px;
         width: 25%;
     }
     .duyem-table {
@@ -1645,25 +1799,29 @@ margin-left: 7px;
     }
     .chu1 {
         font-family: Myriad Pro, Regular;
-        font-size: 15px;
+        font-size: 12px;
         color: white;
-        margin: 0 103px;
+        margin: 0 80px;
         word-spacing: 3.8px;
         margin-bottom: 3px;
     }
+    .can-chinh-hoat-dong-1 {
+        display: flex;
+        margin-left: 101px;
+    }
     .thanh-doc {
-        width: 55px;
+        width: 35px;
         height: 1.5px;
         background-color: #f26522;
-        margin-top: 4px;
+        margin-top: 3px;
     }
     .hinh-thoi {
-        width: 11px;
-        height: 9px;
+        width: 8px;
+        height: 6px;
         transform: skew(336deg);
         background-color: #ffffff;
         margin-left: -34px;
-        margin: 0px 15px;
+        margin: 0px 5px;
     }
     #bocKhoi {
         display: flex;
@@ -1694,7 +1852,7 @@ margin-left: 7px;
         width: 98%;
         margin: auto;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: 10px;
         position: relative;
         flex-direction: column;
     }
@@ -1710,28 +1868,51 @@ margin-left: 7px;
         font-family: UTM Avo, Bold;
         color: red;
         position: absolute;
-        left: 42px;
-        top: 327px;
-        font-size: 12px;
+        left: 27px;
+        top: 274px;
+        font-size: 10px;
     }
     .chu-bat-dong-san {
         font-family: UTM Avo, Bold;
         color: red;
         position: absolute;
-        left: 31px;
-        top: 346px;
-        font-size: 16px;
+        left: 14px;
+        top: 287px;
+        font-size: 14px;
     }
     .img-khoi-3-3 {
         position: absolute;
-        left: 50px;
-        top: 262px;
+        left: 32px;
+        top: 208px;
+    }
+    .khoi-cau-thu {
+        width: 120px;
+        height: 23px;
+        transform: skew(332deg);
+        background: linear-gradient(to right,#ff6502,#fd7d0d);
+        margin: 0px 12px;
+    }
+    .khoi-huan-luyen-vien {
+        width: 170px;
+        height: 23px;
+        transform: skew(332deg);
+        background-color: white;
+        border: 1px solid #fd7d0d;
+        margin: 0px 7px;
+    }
+    .khoi-doi-bong {
+        width: 120px;
+        height: 23px;
+        transform: skew(332deg);
+        background-color: white;
+        border: 1px solid #fd7d0d;
+        margin: 0px 15px;
     }
     .chu-danh-sach {
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         font-family: Myriad Pro, Regular;
-        word-spacing: 4px;
+        word-spacing: 2px;
         letter-spacing: 1px;
     }
     .can-hinh-thanh {
@@ -1743,25 +1924,25 @@ margin-left: 7px;
         font-family: Myriad Pro, Regular;
         color: white;
         transform: skew(27deg);
-        margin-top: 14px;
-        margin-left: 20px;
-        font-size: 16px;
+        margin-top: 7px;
+        margin-left: 24px;
+        font-size: 10px;
     }
     .chu-huan-luyen-vien {
         font-family: Myriad Pro, Regular;
         color: #013747;
         transform: skew(27deg);
-        margin-top: 14px;
-        margin-left: 25px;
-        font-size: 16px;
+        margin-top: 6px;
+        margin-left: 18px;
+        font-size: 10px;
     }
     .chu-doi-bong {
         font-family: Myriad Pro, Regular;
         color: #013747;
         transform: skew(27deg);
-        margin-top: 14px;
-        margin-left: 16px;
-        font-size: 16px;
+        margin-top: 6px;
+        margin-left: 21px;
+        font-size: 10px;
     }
     #cau-thu {
         width: 100%;
@@ -1780,21 +1961,41 @@ margin-left: 7px;
         margin: 0 auto;
     }
     .than-bg {
-        height: 6000px;
+        height: 2120px;
         background-color: #eefdff;
         width: 100%;
         margin-top: -141px;
         z-index: 2;
     }
+    .duoi-bg {
+        width: 100%;
+        height: 143px;
+        background: #eefdff;
+        clip-path: polygon(-993px -37px, 235% 0px, 50.5% 99%);
+        margin-top: -55px;
+    }
     #cau-thu {
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         margin-top: 50px;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 30px;
-        
+    }
+    .cau-thu-1 {
+        width: 155px;
+        height: 300px;
+        background-color: #ffffff;
+        position: relative;
+    }
+    .cau-thu-1-1 {
+        width: 132px;
+        height: 170px;
+        background-color: #8a9dbc;
+        position: absolute;
+        top: 14px;
+        left: 10px;
     }
     #logo-khachHang {
         width: 98%;
@@ -1857,14 +2058,14 @@ margin-left: 7px;
     }
     .img-footter-3 {
         position: absolute;
-        left: 209px;
-        top: 25px;
+        left: 162px;
+        top: 21px;
         width: 16%;
     }
     .thanh-gradiend {
         position: absolute;
-        top: 66px;
-        left: 96px;
+        top: 56px;
+    left: 26px;
         background: linear-gradient(to right, #01333b,#192d2c,#51361d, #f05e03,#ff6201,#f05e03, #51361d,#192d2c,#01333b );
         width: 320px;
         height: 1px;
@@ -1873,14 +2074,74 @@ margin-left: 7px;
     .chu-footter {
         color: white;
         position: absolute;
-        top: 77px;
+        top: 66px;
         word-spacing: 2px;
-        left: 168px;
+        left: 108px;
         font-size: 6px;
+    } 
+
+    .ten-cau-thu {
+        position: absolute;
+        left: 29px;
+        top: 13px;
+        z-index: 3;
+        color: white;
+        word-spacing: 2px;
+        font-size: 10px;
     }
-}
-
-
+    .gach-dong-cau-thu {
+        position: absolute;
+        left: 42px;
+        top: 29px;
+        width: 73px;
+        height: 2px;
+        z-index: 3;
+        background-color: white;
+        border: none;
+    }
+    .session-1 {
+        margin-top: 51px;
+        margin-left: 48px;
+        width: 41%;
+    }
+    .session-2 {
+        margin-left: -66px;
+        width: 10%;
+    }
+        .session-3{
+            margin-top: 54px;
+             text-align: center;
+        }
+        .session-4{
+            margin-bottom: 10px;
+        }
+        .session-5 {
+            font-size: 9px;
+            color: white;
+            margin: 9px auto;
+        }
+        .arrow-down {
+            width: 84px;
+            height: 23px;
+            background-color: #000305;
+            margin-left: 23px;
+            display: flex;
+        }
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black;
+            margin-left: 60px;
+            margin-top: 14px;
+        }
+        footer {
+            margin-top: 25px;
+            width: 100%;
+            height: auto;
+        }
+      
 }
 
 </style>
